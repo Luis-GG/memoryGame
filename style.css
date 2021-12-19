@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+#frontPage {
+  background-image: url("https://media.istockphoto.com/vectors/black-and-white-grunge-overlay-texture-random-distress-dirty-grain-vector-id1218488725");
+  width: 100vw;
+  height: 99.9vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  align-items: center;
+}
+
+#game{
+  width: 100vw;
+  height: 100vh;
+}
+
+
+body {
+  margin: 0;
+  
+}
+
+
+h1 {
+  font-family: "Press Start 2P";
+  margin-top: 10vh;
+  font-size: 10rem;
+  text-align: center;
+  background-color:none;
+  margin-bottom: 5vh;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 5vh;
+  font-size: 4.5rem;
+  text-align: center;
+  font-family: "Press Start 2P";
+}
+h3 {
+  margin-top: 0;
+  font-size: 6rem;
+  font-family: "Press Start 2P";
+}
+input {
+  font-size: 5rem;
+  display: block;
+}
+
+
+form {
+  text-align: center;
+  
+}
+
+button {
+  margin-top: 5vh;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  border: 1px solid black;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
+.button {
+  width: 50vw;
+  height: 30vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  position: absolute;
+  font-size: 1.8rem;
+  text-align: center;
+  top: 2%;
+  left: 44%
+}
+
+#game {
+  position: relative;
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("https://images.unsplash.com/photo-1566305977571-5666677c6e98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRleHR1cmUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"); */
+}
+
+#game div {
+  border: 1px solid black;
+  width: 16%;
+  height: 220px;
+  margin: 10px;
+}
+
+
+
+.red {
+  background-color: red;
+}
+
+.blue{
+background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple{
+  background-color: purple;
+}
+
+.hidden {
+  background-color: black;
+}
+.target{
+  pointer-events: none;
+}
+.completed {
+  pointer-events: none;
+}
+
+.temp {
+  pointer-events: none;
+
+}

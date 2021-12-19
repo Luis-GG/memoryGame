@@ -56,12 +56,15 @@ form {
   
 }
 
-button {
+a {
+  
+  background-color: black;
   margin-top: 5vh;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: bolder;
   text-decoration: none;
-  border: 1px solid black;
+ border: 10px solid;
   padding-left: 3rem;
   padding-right: 3rem;
   padding-top: 1.5rem;
@@ -69,13 +72,20 @@ button {
   border-radius: 10px;
 }
 
-.button {
-  width: 50vw;
-  height: 30vh;
+a {
+  font-family: "Press Start 2P";
+  width: 25vw;
+  height: 16vh;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: transform .7s ease-in-out;
+}
+
+a:hover {
+  background-color: rgb(123, 255, 0);
+
 }
 
 p {
@@ -139,4 +149,12 @@ background-color: blue;
 .temp {
   pointer-events: none;
 
+}
+
+.button {
+  transition: color 1s;
+}
+
+#del {
+  display: none;
 }

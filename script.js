@@ -1,8 +1,9 @@
 const gameContainer = document.getElementById("game");
 const clickedPair = document.querySelectorAll(".target");
 const userName = document.querySelector("input");
-const btn = document.querySelector("button");
+const btn = document.querySelector("a");
 const scoreDisp = document.querySelector("p");
+const btnLetters = document.querySelectorAll("span");
 
 let selectedCards = [];
 let score = 0;
@@ -176,13 +177,30 @@ function handleCardClick(event) {
 
 
 
-
-
-
-
-
-
-
-
 // when the DOM loads
 createDivsForColors(shuffledColors);
+
+
+function ranRGB() {
+  let R = Math.floor(Math.random() * 256);
+  let G = Math.floor(Math.random() * 256);
+  let B = Math.floor(Math.random() * 256);
+  return `rgb(${R},${G},${B})`
+}
+
+
+
+setInterval(function () {
+  for (let letter of btnLetters) {
+    letter.style.color = ranRGB();
+  }
+}, 1000);
+
+
+setInterval(function () {
+
+  btn.style.borderColor = ranRGB();
+
+}, 1000);
+
+console.log(btn)
